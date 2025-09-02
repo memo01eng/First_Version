@@ -1,0 +1,85 @@
+/* @media   (max-width: 992px)  {
+
+    .herosection{
+       
+  background-position: top 0  right -450px;
+  
+  padding: 0px 10px;
+    }
+    .innersinuosection{
+      flex-direction: column;
+    }
+
+
+}
+
+
+@media   (min-width: 992px ) and (max-width: 1200px)  {
+
+    .herosection{
+       
+  background-position: top 0  right -400px;
+  
+  
+  
+  
+    }
+
+
+}
+ */
+
+ /* للشاشات الصغيرة جداً زي الموبايل (سامسونج جلاكسي S20 وغيره) */
+@media screen and (max-width: 576px) {
+
+  /* navbar */
+  .navbar {
+    padding: 15px 20px;   /* يقلل المسافة يمين وشمال */
+  }
+
+  .navbar .navbar-brand img {
+    width: 100px;   /* يصغر اللوجو */
+  }
+
+  .colapesicon i {
+    font-size: 28px; /* يصغر أيقونة الهامبرجر والسلة */
+  }
+
+  /* hero section */
+  .herosection {
+      
+    padding: 40px 20px;
+     background-position: top 0  right -450px; /* يصلح مكان الصورة */
+   
+  }
+
+  .herosection h1 {
+    font-size: 26px;
+  }
+
+  .herosection h2 {
+    font-size: 22px;
+  }
+
+  .herosection h4 {
+    font-size: 16px;
+  }
+
+  .herosection p {
+    font-size: 14px;
+  }
+
+  .herosection button {
+    padding: 10px 40px; 
+    font-size: 14px;
+    background-size: contain; /* يتظبط زرار الـ background */
+  }
+
+  /* الكروت الصغيرة (features) */
+  .sixcardsofthsinformationofthewepsite .cardd h4 {
+    font-size: 12px;
+  }
+  .signupsection .innersinuosection{
+    flex-direction: column;
+  }
+}

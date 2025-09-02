@@ -1,0 +1,87 @@
+
+/* knowus */
+.knowus{
+    height: 40vh;
+    background-image: url(../img/about/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.knowus h2 , p{
+    color: #fff;
+    font-weight: 900;
+   margin: 10px;
+}
+/* knowus */
+/* howweare */
+
+
+.howweare .innertext h2{
+    font-weight: 800;
+    /* font-size: 45px; */
+    margin: 10px 0;
+    font-size: clamp(35px, 6vw, 45px) ;
+}
+.howweare .innertext p{
+   color: #838489;
+   margin: 10px 0px;
+}
+.howweare .innertext h5{
+    text-decoration-line: underline; 
+   text-decoration-style: dotted;
+   margin: 20px 0px;
+}
+.howweare .innertext .sheret{
+    background-color: #838489;
+    overflow: hidden;
+    height: 20px;
+}
+.howweare .innertext .sheret h3{
+   font-size: medium;
+  
+     animation: movee 7s linear infinite;
+    
+}
+
+
+@keyframes movee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* howweare */
+
+.downloadourapp h2 {
+  font-weight: 700;
+  font-size: clamp(22px, 4vw, 36px); 
+  margin-bottom: 10px;
+  color: #222; 
+}
+
+.downloadourapp h2 span {
+  color: blueviolet;
+  text-decoration: underline;
+}
+
+.videowrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appvideo {
+  width: 100%;
+  max-width: 700px;   
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); 
+}
+

@@ -1,0 +1,102 @@
+
+/* knowus */
+.knowus{
+    height: 40vh;
+    background-image: url(../img/about/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.knowus h2 , p{
+    color: #fff;
+    font-weight: 900;
+   margin: 10px;
+}
+/* knowus */
+
+/*bodyofltstalk */
+.bodyofltstalk .innertext h4{
+    color: #8b8b8e;
+    font-size: larger;
+}
+
+.bodyofltstalk .innertext h2{
+    font-weight: 700;
+    font-size: 32px;
+}
+.bodyofltstalk .innertext ul li{
+    color: #8b8b8e;
+   list-style: none;
+   margin: 30px 0px;
+}
+.bodyofltstalk .innertext ul li i{
+    margin-right: 10px;
+}
+.bodyofltstalk .innertext ul {
+   padding: 0;
+   margin: 20px 0px;
+}
+.map-responsive {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px; 
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height: 100%;  
+}
+/* bodyofltstalk*/
+
+/* leavmessage*/
+.leavmessage  .innerleavmessag h4{
+    color: #8b8b8e;
+ font-size: 20px;
+}
+.leavmessage  .innerleavmessag h2{
+
+ font-size: 30px;
+ font-weight: 700
+}
+.leavmessage  .innerleavmessag 
+{
+
+ font-size: 30px;
+ font-weight: 700
+}
+form input,
+form textarea {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #198754;
+  box-shadow: 0 0 8px rgba(25,135,84,0.3);
+  outline: none;
+}
+
+
+.leavmessage .innermessagefromuser h4{
+    font-weight: 500;
+
+}
+.leavmessage .innermessagefromuser h5{
+    font-size: medium;
+    color: #8b8b8e;
+}
+/* leavmessage*/
+
+

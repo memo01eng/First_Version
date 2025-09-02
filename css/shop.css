@@ -1,0 +1,21 @@
+/* Stay Home */
+.StayHome{
+    height: 40vh;
+    background-image: url(../img/banner/b1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.StayHome h2 , p{
+    color: #fff;
+    font-weight: 900;
+   margin: 10px;
+}
+/* Stay Home */
+
+
+

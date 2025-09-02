@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: "Spartan", sans-serif;  
+}
+h1{
+  font-size: 50px;
+  color: #222;
+}
+h2{
+  font-size: 46px;
+  color: #222;
+}
+h4{
+  font-size: 20px;
+  color: #222;
+}
+/* for Scroll bar */
+::-webkit-scrollbar {
+  width: 10px;              
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;      
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #585357, #807e87); 
+  border-radius: 10px; 
+ 
+}
+/* for Scroll bar */
+html, body {
+  overflow-x: hidden; 
+}
+
+
+/* navbar */
+.navbar{
+    background-color:#E3E6F3 ;
+    box-shadow: 0 5px 15px rgb(0, 0, 0 , 0.06);
+    padding: 20px 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin: 0px 10px;
+   
+}
+.navbar .navbar-nav .nav-item a ,
+.ancorofmobail
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    position: relative;
+   
+}
+.navbar .navbar-nav .nav-item a:hover ,
+.navbar .navbar-nav .nav-link.active ,
+.ancorofmobail.active
+{
+   color: #088168;
+   
+}
+
+.navbar .navbar-nav .nav-item a:hover::before,
+.navbar .navbar-nav .nav-link.active::before{
+ content: '';
+    width: 45%;
+    height: 2px;
+    background-color: #088168;
+    position: absolute;
+   bottom: 8px;
+   
+}
+
+/* colapse nave bar 👇 */
+.colapesicon i{
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #1a1a1a;
+}
+.thesidebar{
+    background-color: #E3E6F3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0,0.1);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10px  50px 0px 10px;
+    left: 300px;    
+    transform: translateX(100%);
+    transition: all 1s; 
+    z-index: 9999;
+    
+}
+.thesidebar i {
+    color: #088168;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px ;
+}
+
+.thesidebar  .rotateeventtorevers{
+  transform-origin: center;
+    animation: spinrevers 1s linear ;
+}
+.thesidebar .rotateevent{
+   transform-origin: center;
+    animation: spin 2s linear 1;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinrevers {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.thesidebar .ancorofmobail:hover{
+color: #088168;
+
+}
+
+.thesidebar .ancorofmobail{
+padding: 10px 0px;
+margin-left: 10px;
+}
+.ancorofmobail.active::before,
+.thesidebar .ancorofmobail:hover::before{
+ content: '';
+    width: 51.2969px;
+    height: 2px;
+    background-color: #088168;
+    position: absolute;
+   bottom: 2px;
+   
+}
+
+/* colapse nave bar ☝*/
+
+/* navbar */
+/* sign up  */
+.signupsection {
+  padding: 60px;
+  background-color: #031e43;
+  background-image: url(../img/banner/b14.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+}
+.signupsection .rightpart h2{
+  color: #E3E6F3;
+  font-weight: 700;
+  font-size: clamp(25px, 2vw, 46px);
+  
+}
+.signupsection .rightpart p{
+  color: #1c57a9;
+  font-weight: 700;
+}
+.signupsection .rightpart p span{
+  color: rgb(234, 203, 30);
+  font-weight: 700;
+}
+.signupsection .leftpart{
+ /* background-color: #044c13; */
+ width: 400px;
+ 
+}
+.signupsection .leftpart .youremail{
+ background-color: #E3E6F3;
+ border-radius: 5px;
+ overflow: hidden;
+ width: 100%;
+ position: relative;
+
+}
+.signupsection .leftpart .youremail input{
+ background-color: transparent;
+ border: none;
+
+ width: 100%;
+ padding: 10px 90px 10px 10px;
+ outline: none;
+ 
+}
+.signupsection .leftpart .youremail button{
+  position: absolute;
+  right: 0;
+ background-color: #044c13;
+ 
+ color: #E3E6F3;
+ border: none;
+ 
+ padding: 10px;
+ 
+ transition: all 0.3s ease; /* عشان الحركة تبقى ناعمة */
+}
+
+.signupsection .leftpart .youremail button:hover {
+  background-color: #05691c; /* لون أفتح شوية عند الهوفر */
+  
+}
+/* sign up  */
+/* footer section  */
+.footersection .innerfootersection h4{
+  font-weight: 700;
+  margin: 20px 0;
+}
+.footersection .innerfootersection p{
+  font-weight: 700;
+  color: #585357;
+}
+.footersection  span{
+  font-weight: 200;
+  color: #807e87;
+  cursor: pointer;
+  font-weight: 400;
+}
+.footersection .spanner span{
+ display: inline-block;
+}
+.footersection .innerfootersection .iconsofsontect i{
+ font-size: 20px;
+  color: #585357;
+  margin: 0 5px;
+  transition: all 0.3s ease; 
+}
+.footersection .innerfootersection .iconsofsontect i:hover{
+ 
+  color: #b61d97;
+ 
+}
+.footersection .applicationdownload{
+  margin: 10px 0;
+}
+.footersection .applicationdownload .downloadapp {
+ 
+  border: 2px #088168 solid;
+  border-radius: 10px;
+  margin-right: 5px;
+  overflow: hidden;
+ 
+}
+.footersection .applicationdownload .downloadapp:hover img{
+ 
+  transform: scale(1.1);
+ 
+}
+.footersection .applicationdownload .downloadapp img{
+  cursor: pointer;
+ 
+  transition: all 0.3s ease;
+ 
+}
+.footersection  img{
+  cursor: pointer;
+ 
+
+ 
+}
+/* footer section  */
+/* shopping*/
+
+.FeaturedProductsSection , .NewProdactSection,
+.FeaturedProductsSection1 , .NewProdactSection{
+  padding: 20px;
+}
+.FeaturedProductsSection .downFeaturedProducts ,
+.FeaturedProductsSection1 .downFeaturedProducts ,
+.NewProdactSection .downFeaturedProducts{
+  padding: 10px;
+}
+.FeaturedProductsSection .downFeaturedProducts h2 ,
+.FeaturedProductsSection1 .downFeaturedProducts h2 ,
+.NewProdactSection .upperNewProdact h2{
+  font-size: 50px;
+  font-weight: 600;
+}
+.FeaturedProductsSection .downFeaturedProducts p ,
+.FeaturedProductsSection1 .downFeaturedProducts p ,
+.NewProdactSection .upperNewProdact p{
+  color: #8797e1 ;
+}
+.FeaturedProductsSection .someFeaturedProducts figure ,
+.FeaturedProductsSection1 .someFeaturedProducts figure ,
+.NewProdactSection .someNewProdact figure{
+  width: 100%;
+  height: 400px;   /* انت اختار الطول المناسب */
+  overflow: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.innercard figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.innercard figure img:hover {
+  transform: scale(1.1);
+}
+.FeaturedProductsSection .innercard ,
+.FeaturedProductsSection1 .innercard ,
+.NewProdactSection .innercard {
+  position: relative;
+     box-shadow: 0 5px 15px rgb(0, 0, 0 , 0.4);
+    background-color: transparent;
+     border-radius: 10px;
+     padding: 10px;
+}
+
+.FeaturedProductsSection .someFeaturedProducts h4 ,
+.FeaturedProductsSection1 .someFeaturedProducts h4 ,
+.NewProdactSection .someNewProdact h4{
+  color: #b4bff3;
+  font-size: 15px;
+   white-space: nowrap;       
+  overflow: hidden;        
+  text-overflow: ellipsis; 
+}
+.FeaturedProductsSection .someFeaturedProducts p ,
+.FeaturedProductsSection1 .someFeaturedProducts p ,
+.NewProdactSection .someNewProdact p{
+  font-weight: 700; 
+ color: black;
+   white-space: nowrap;       
+  overflow: hidden;        
+  text-overflow: ellipsis;    
+}
+.FeaturedProductsSection .someFeaturedProducts h5 ,
+.FeaturedProductsSection1 .someFeaturedProducts h5 ,
+.NewProdactSection .someNewProdact h5{
+  color: #088168;
+  font-weight: 600;
+}
+.FeaturedProductsSection .someFeaturedProducts .iconcart ,
+.FeaturedProductsSection1 .someFeaturedProducts .iconcart ,
+.NewProdactSection .someNewProdact .iconcart{
+  cursor: pointer;
+  background-color: #39e2c0;
+  color: #088168;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.FeaturedProductsSection .someFeaturedProducts .iconcart:hover ,
+.FeaturedProductsSection1 .someFeaturedProducts .iconcart:hover ,
+.NewProdactSection .someNewProdact .iconcart:hover{
+  background-color: #044c13;
+  color: white;
+}
+ .fiveStars i {
+   
+    color: gold;
+    cursor: pointer;
+  }
+
+
+.someFeaturedProducts  .loaderdesign ,
+.someNewProdact .loaderdesign{
+  height: 564px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.downFeaturedProducts .numberofpage{
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #088168;
+    color: #E3E6F3;
+    margin: 0px 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+/* shopping*/
+/* buy section*/
+
+
+.buysection{
+    /* height: 100vh; */
+    
+    position:fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: #807e878b;
+    
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding: 20PX;
+   overflow-y: auto;   
+  overflow-x: hidden; 
+}
+
+
+
+
+
+
+
+.buysection .innerbuysection{
+    width: 70%;
+    background-color: #fff;
+  
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0 , 0.06);
+
+
+     width: 90%;     
+    max-width: 1200px;
+    max-height: 90vh; 
+    overflow-y: auto;  
+  overflow-x: hidden;
+
+    padding: 20px;
+    
+}
+.buysection .innerbuysection .photoOfProdact .mainphot ,
+.buysection .innerbuysection .photoOfProdact .somephoto {
+  border-radius: 5px;
+  overflow: hidden;
+    
+}
+.buysection .innerbuysection .photoOfProdact .mainphot:hover img ,
+.buysection .innerbuysection .photoOfProdact .somephoto:hover img  {
+
+    transform: scale(1.1);
+    
+}
+.buysection .innerbuysection .photoOfProdact img ,
+.buysection .innerbuysection .photoOfProdact  img  {
+
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    
+}
+.buysection .innerbuysection .infoOfbuyProdat form {
+
+   /* background-color: #05691c; */
+   display: flex;
+   flex-direction: column;
+   
+
+    
+}
+.buysection .innerbuysection .infoOfbuyProdat form button {
+
+   background-color: #088168;
+   border-radius: 5px;
+   border: none;
+   padding: 10px;
+   color: #E3E6F3;
+   
+transition: all .3s ease-in-out;
+    
+}
+.buysection .innerbuysection .infoOfbuyProdat form button:hover {
+
+   background-color: #05691c;
+ 
+   
+   
+
+    
+}
+.buysection .closerofbuyProdact {
+
+    position: absolute;
+    top: 3px;
+    right:  10px;
+   
+
+    
+}
+.buysection .closerofbuyProdact i{
+font-size: 25px;
+   transition: all .3s ease-in-out;
+   cursor: pointer;
+
+    
+}
+.buysection .closerofbuyProdact i:hover{
+font-size: 30px;
+   color: darkgreen;
+   
+
+    
+}
+
+
+
+
+
+
+/* buy section*/

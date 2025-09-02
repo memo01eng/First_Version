@@ -1,0 +1,73 @@
+
+/* cart */
+.Cart{
+    height: 40vh;
+    background-image: url(../img/about/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Cart h2 , p{
+    color: #fff;
+    font-weight: 900;
+   margin: 10px;
+}
+
+/* cart Home */
+/* table of what the user bought */
+.tableofwhattheuserbought .dataTable td {
+  vertical-align: middle; 
+  text-align: center;     
+  padding: 10px;          
+}
+.tableofwhattheuserbought thead tr td{
+  vertical-align: middle; 
+  text-align: center;     
+  padding: 10px;          
+}
+.tableofwhattheuserbought .dataTable td img {
+  width: 60px;    
+    
+  /* display: block;  */
+  margin: 0 auto; 
+}
+.tableofwhattheuserbought .dataTable td i{
+transition: all .3s ease-in-out;
+}
+.tableofwhattheuserbought .dataTable td i:hover{
+  color: rgb(227, 59, 59);
+}
+
+/* table of what the user bought */
+/*coupon and cart totals*/
+
+.totalprice .innerApplayCoupon input{
+  border: #585357 solid 1px;
+  background-color: transparent;
+  width: 50%;
+  outline: none;
+  padding: 5px;
+  
+
+}
+.totalprice .innerApplayCoupon {
+ text-align: center;
+ margin: 10px 0;
+ 
+
+}
+.totalprice .innerCartTotals{
+  border: #585357 solid 1px;
+  background-color: transparent;
+  padding: 10px;
+  
+
+}
+.totalprice h2{
+  font-size: 44px;
+}
+/*coupon and cart totals*/
