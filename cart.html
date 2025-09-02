@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>cava</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/all.min.css">
-    <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="../css/commencss.css">
-    <link rel="icon" href="../img/logo.png">
-    <link rel="stylesheet" href="../css/mediaquer.css">
+    <title>cava</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/commencss.css">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/mediaquer.css">
 </head>
 <body>
-<!-- nav bar  -->
+    <!-- nav bar  -->
 <nav class="navbar navbar-expand-lg ">
   <div class="container">
-    <a class="navbar-brand" href="#knowUs"><img src="../img/logo.png" alt="logo cava"></a>
+    <a class="navbar-brand" href="#Cart"><img src="./img/logo.png" alt="logo cava"></a>
 
    <div class="colapesicon d-lg-none">
-    <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+    <a href="#" ><i class="fa-solid fa-bag-shopping"></i></a>
     <i  class="fa-solid fa-outdent"></i>
    </div>
  
@@ -35,13 +35,13 @@
           <a class="nav-link" href="./blog.html">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">About</a>
+          <a class="nav-link" href="./about.html">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./content.html">Content</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a class="nav-link active" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
         </li>
       </ul>
     
@@ -50,57 +50,74 @@
 </nav>
 <div class=" thesidebar d-lg-none">
   <i id="closericonfornavbar" class="fa-solid  fa-xmark"></i>
-    <a class="nav-link ancorofmobail " href="./index.html">Home</a>
-    <a class="nav-link ancorofmobail " href="./shop.html">Shop</a>
+    <a class="nav-link ancorofmobail" href="./index.html">Home</a>
+    <a class="nav-link ancorofmobail" href="./shop.html">Shop</a>
     <a class="nav-link ancorofmobail" href="./blog.html">Blog</a>
-    <a class="nav-link ancorofmobail active" href="#">About</a>
+    <a class="nav-link ancorofmobail" href="./about.html">About</a>
     <a class="nav-link ancorofmobail" href="./content.html">Content</a>
    </div>
 <!-- nav bar  -->
-  <!--Know us-->
-<section id="knowUs" class="knowus">
-  <h2>#Know Us</h2>
-  <p>Lorem ipsum dolor sit amet consectetur .</p>
+<!-- Cart-->
+
+<section id="Cart" class="Cart">
+  <h2>#cart</h2>
+  <p>Add your code $ SAVE upto 70%!</p>
 </section>
- <!--Know us-->
- <!--hwo we are ?-->
-<div class="howweare p-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-xl-6">
-                <div class="innerimg">
-                    <img class="w-100" src="../img/about/a6.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-xl-6 d-flex align-items-center">
-               <div class="innertext">
-                 <h2>Who We Are?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis officia! Fuga iure perspiciatis ratione dolor aspernatur nam eos facere aperiam esse deleniti sed, enim eaque expedita magni culpa! Ad, libero! Dolorum, assumenda tempore. Reprehenderit, nisi unde. A inventore, doloribus iure eligendi ut deleniti, assumenda perspiciatis libero, fugiat esse reiciendis.</p>
-                <h5>Create stunning images with ad mush or ad little control as you like thanks to a chaice of Basic and Crative modes</h5>
-                <div class="sheret">
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempore vel et natus dolor sit amet consectetur adipisicing .</h3>
-                </div>
-               </div>
-            </div>
-        </div>
+<!-- Cart-->
+<!-- table of what the user bought -->
+
+<div class="tableofwhattheuserbought p-4">
+    <div class="container ">
+      <div class="table-responsive">
+
+         <table class="table mt-3 table-striped">
+            <thead>
+                <tr>
+                    <td>REMOVE</td>
+                    <td>IMG</td>
+                    <td>PRODUCT</td>
+                    <td>SIZE</td>
+                    <td>PRICE</td>
+                    <td>QUANTITY</td>
+                    <td>SUNTOTAL</td>
+                </tr>
+            </thead>
+            <tbody class="dataTable">
+                
+                
+            </tbody>
+        </table>
+      </div>
+        
     </div>
 </div>
- <!--hwo we are ?-->
- <!--Download nOur App-->
-
-<div class="downloadourapp p-5">
-    <div class="container text-center m-auto">
-        <h2 >Download Our <span style="color: blueviolet; text-decoration: underline;">App</span></h2>
-        <div class="videowrapper">
-            <video src="../img/about/1.mp4" class="appvideo" autoplay loop muted playsinline  ></video>
+<!-- table of what the user bought -->
+<!-- total price of the user -->
+<div class="totalprice p-4">
+  <div class="container">
+    <div class="row">
+      <div class=" col-12 col-xl-6">
+        <div class="innerApplayCoupon">
+          <h2>Apply Coupon</h2>
+          <input type="text" placeholder="Enter Your Coupon">
+          <button class="btn btn-success">Apply</button>
         </div>
+      </div>
+      <div class="col-12 col-xl-6">
+        <div class="innerCartTotals">
+          <h2>Cart Totals</h2>
+          <table class="table carttools">
+          
+          </table>
+          <button class="btn btn-success proceedCheckout">Proceed to Checkout</button>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
-
+<!-- total price of the user -->
 <!-- sign up -->
 <section class="signupsection">
-
-
   <div class="container innersinuosection d-flex justify-content-between align-items-center ">
     <div class="rightpart">
       <h2>Sign Up For Newsletters</h2>
@@ -112,9 +129,7 @@
         <button>Sign Up</button>
       </div>
     </div>
-
   </div>
-
 </section>
 <!-- sign up -->
 <!-- footer section -->
@@ -124,7 +139,7 @@
     <div class="row g-2">
       <div class="col-12 col-xl-4">
         <div class="innerfootersection">
-          <img src="../img/logo.png" alt="">
+          <img src="./img/logo.png" alt="">
           <h4>contact</h4>
           <p>Address: <span>cairo eltagamo3 el5ames</span></p>
           <p>Phone: <span>0111111111113</span></p>
@@ -161,17 +176,17 @@
         <span>From App Story or google Play</span>
        <div class="applicationdownload d-flex justify-content-start">
          <div class="downloadapp">
-          <img src="../img/pay/app.jpg" alt="">
+          <img src="./img/pay/app.jpg" alt="">
         </div>
         <div class="downloadapp">
-          <img src="../img/pay/play.jpg" alt="">
+          <img src="./img/pay/play.jpg" alt="">
         </div>
        </div>
        <span>Secured Payment Fateways</span>
 
        <div class="payment">
 
-        <img class="mt-2" src="../img/pay/pay.png" alt="">
+        <img class="mt-2" src="./img/pay/pay.png" alt="">
 
 
        </div>
@@ -184,10 +199,10 @@
 
 </section>
 <!-- footer section -->
- <!--Download nOur App-->
-<script src="../js/bootstrap.bundle.js"></script>
-    <script src="../js/jquery-3.7.1.min.js"></script>
-   
-     <script src="../js/commenjs.js"></script>
+ <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/cart.js"></script>
+     <script src="./js/commenjs.js"></script>
+    
 </body>
 </html>
